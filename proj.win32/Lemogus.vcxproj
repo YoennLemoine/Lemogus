@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1E115933-55D0-3E1F-81A8-77086221214B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>Lemogus</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\bin\Lemogus\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Lemogus.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Lemogus</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\bin\Lemogus\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Lemogus.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Lemogus</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\bin\Lemogus\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Lemogus.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Lemogus</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\bin\Lemogus\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Lemogus.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Lemogus</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/Box2D/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/chipmunk/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/bullet/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/uv/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/webp/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/websockets/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/curl/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/png/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include\bullet;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include\bullet;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/ylemoine/repos/Lemogus/proj.win32/Debug/Lemogus.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Debug/Lemogus.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/Box2D/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/chipmunk/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/bullet/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/uv/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/webp/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/websockets/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/curl/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/png/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include\bullet;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include\bullet;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/ylemoine/repos/Lemogus/proj.win32/Release/Lemogus.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/Release/Lemogus.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/Box2D/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/chipmunk/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/bullet/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/uv/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/webp/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/websockets/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/curl/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/png/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include\bullet;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include\bullet;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/ylemoine/repos/Lemogus/proj.win32/MinSizeRel/Lemogus.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/MinSizeRel/Lemogus.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/Box2D/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/chipmunk/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/bullet/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/uv/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/webp/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/websockets/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/curl/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/png/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/ylemoine/repos/Lemogus/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include\bullet;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ylemoine\repos\Lemogus\Classes;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\include;C:\Users\ylemoine\repos\Lemogus\cocos2d;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\recast\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\tinyxml2\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxhash\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\xxtea\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\clipper\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\edtaa3func\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\ConvertUTF\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\poly2tri\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\md5\..;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\unzip\.;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\include\bullet;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\include\win32;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/ylemoine/repos/Lemogus/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\ylemoine\repos\Lemogus\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/ylemoine/repos/Lemogus/proj.win32/RelWithDebInfo/Lemogus.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ylemoine/repos/Lemogus/proj.win32/bin/Lemogus/RelWithDebInfo/Lemogus.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ylemoine\repos\Lemogus\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/ylemoine/repos/Lemogus/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ylemoine/repos/Lemogus -BC:/Users/ylemoine/repos/Lemogus/proj.win32 --check-stamp-file C:/Users/ylemoine/repos/Lemogus/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/ylemoine/repos/Lemogus/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ylemoine/repos/Lemogus -BC:/Users/ylemoine/repos/Lemogus/proj.win32 --check-stamp-file C:/Users/ylemoine/repos/Lemogus/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/ylemoine/repos/Lemogus/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ylemoine/repos/Lemogus -BC:/Users/ylemoine/repos/Lemogus/proj.win32 --check-stamp-file C:/Users/ylemoine/repos/Lemogus/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/ylemoine/repos/Lemogus/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ylemoine/repos/Lemogus -BC:/Users/ylemoine/repos/Lemogus/proj.win32 --check-stamp-file C:/Users/ylemoine/repos/Lemogus/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\ylemoine\repos\Lemogus\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Classes\AppDelegate.h" />
+    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Classes\HelloWorldScene.h" />
+    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\main.h" />
+    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\resource.h" />
+    <ClCompile Include="C:\Users\ylemoine\repos\Lemogus\Classes\AppDelegate.cpp" />
+    <ClCompile Include="C:\Users\ylemoine\repos\Lemogus\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\main.cpp" />
+    <ResourceCompile Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\game.rc" />
+    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\CloseNormal.png" />
+    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\CloseSelected.png" />
+    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\HelloWorld.png" />
+    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\fonts\arial.ttf" />
+    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\res\.gitkeep" />
+    <ClCompile Include="C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{5D9FB788-CEE1-347F-82D4-FDC25C6DBAEB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\SYNC_RESOURCE-Lemogus.vcxproj">
+      <Project>{39521B1C-17E4-3449-A557-7BB82EB3E8AB}</Project>
+      <Name>SYNC_RESOURCE-Lemogus</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{BF033730-7693-3B73-BFCC-83E16CE7F106}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{3423D1DF-1E88-3CA5-936E-80758A176260}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{A9FC21DC-9D99-319A-B29B-5AD8AFDC6338}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{EDE3A9A4-A437-3DD8-A754-2BADA3D0BDE3}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{0A34BD91-EFD4-3C22-827E-537BEB3D8E8F}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{1DE62FEF-640F-3454-934B-EF2528BE7748}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{E1782E29-2C4D-3FDB-8632-E3EDD257CFC1}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{11CCFDC1-E762-3ED4-BD64-B73E8390581D}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{4C7A8B41-0D53-3D14-8B93-CDA275005358}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{8F3112E0-2A47-323A-9A76-37BD5D07BA2E}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{15398CEB-D2C2-351C-99AC-A8B019E93885}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\external.vcxproj">
+      <Project>{4121565D-E6CD-35F5-9767-643C2CC1F7D9}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

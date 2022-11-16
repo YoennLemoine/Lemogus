@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/ylemoine/repos/Lemogus/cocos2d/external/ConvertUTF/CMakeLists.txt
+  ConvertUTF.c
+  ConvertUTFWrapper.cpp
+  ext_convertUTF.vcxproj -> C:\Users\ylemoine\repos\Lemogus\proj.win32\lib\Debug\ext_convertUTF.lib
