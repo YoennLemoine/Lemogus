@@ -25,7 +25,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{30B6C855-D137-3D06-BC71-BDAB81C30E9C}</ProjectGuid>
+    <ProjectGuid>{55C22D2E-1E75-36B4-8D0F-C0111F346902}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
     <Platform>Win32</Platform>
@@ -108,11 +108,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\CMakeLists.txt">
+    <CustomBuild Include="S:\Lemogus\cocos2d\cocos\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/ylemoine/repos/Lemogus/cocos2d/cocos/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule S:/Lemogus/cocos2d/cocos/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ylemoine/repos/Lemogus -BC:/Users/ylemoine/repos/Lemogus/proj.win32 --check-stamp-file C:/Users/ylemoine/repos/Lemogus/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/Lemogus -BS:/Lemogus/proj.win32 --check-stamp-file S:/Lemogus/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -120,12 +120,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\math\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\network\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">S:\Lemogus\cocos2d\cocos\2d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\3d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\audio\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\base\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\math\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\navmesh\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\network\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\physics\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\physics3d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\platform\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\renderer\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\ui\CMakeLists.txt;S:\Lemogus\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">S:\Lemogus\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/ylemoine/repos/Lemogus/cocos2d/cocos/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule S:/Lemogus/cocos2d/cocos/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ylemoine/repos/Lemogus -BC:/Users/ylemoine/repos/Lemogus/proj.win32 --check-stamp-file C:/Users/ylemoine/repos/Lemogus/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/Lemogus -BS:/Lemogus/proj.win32 --check-stamp-file S:/Lemogus/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -133,12 +133,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\math\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\network\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">S:\Lemogus\cocos2d\cocos\2d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\3d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\audio\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\base\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\math\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\navmesh\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\network\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\physics\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\physics3d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\platform\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\renderer\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\ui\CMakeLists.txt;S:\Lemogus\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">S:\Lemogus\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/ylemoine/repos/Lemogus/cocos2d/cocos/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule S:/Lemogus/cocos2d/cocos/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ylemoine/repos/Lemogus -BC:/Users/ylemoine/repos/Lemogus/proj.win32 --check-stamp-file C:/Users/ylemoine/repos/Lemogus/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/Lemogus -BS:/Lemogus/proj.win32 --check-stamp-file S:/Lemogus/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -146,12 +146,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\math\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\network\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">S:\Lemogus\cocos2d\cocos\2d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\3d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\audio\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\base\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\math\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\navmesh\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\network\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\physics\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\physics3d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\platform\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\renderer\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\ui\CMakeLists.txt;S:\Lemogus\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">S:\Lemogus\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/ylemoine/repos/Lemogus/cocos2d/cocos/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule S:/Lemogus/cocos2d/cocos/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ylemoine/repos/Lemogus -BC:/Users/ylemoine/repos/Lemogus/proj.win32 --check-stamp-file C:/Users/ylemoine/repos/Lemogus/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/Lemogus -BS:/Lemogus/proj.win32 --check-stamp-file S:/Lemogus/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -159,66 +159,66 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\base\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\math\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\network\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\ylemoine\repos\Lemogus\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">S:\Lemogus\cocos2d\cocos\2d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\3d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\audio\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\base\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\math\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\navmesh\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\network\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\physics\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\physics3d\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\platform\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\renderer\CMakeLists.txt;S:\Lemogus\cocos2d\cocos\ui\CMakeLists.txt;S:\Lemogus\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">S:\Lemogus\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\ZERO_CHECK.vcxproj">
-      <Project>{5D9FB788-CEE1-347F-82D4-FDC25C6DBAEB}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{26F35BA7-2BB4-3EE6-BF1A-C9B99B696DEB}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\cocos\core\cocos2d.vcxproj">
-      <Project>{BF033730-7693-3B73-BFCC-83E16CE7F106}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{115F15E4-E3A3-3B04-B855-2EDCD87DBC83}</Project>
       <Name>cocos2d</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
-      <Project>{3423D1DF-1E88-3CA5-936E-80758A176260}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{37C2797E-C896-367B-96CF-9863C4FBB065}</Project>
       <Name>ext_clipper</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
-      <Project>{A9FC21DC-9D99-319A-B29B-5AD8AFDC6338}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{CC6BCAA2-4F71-3A76-B2D3-B4A063DBD1FA}</Project>
       <Name>ext_convertUTF</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
-      <Project>{EDE3A9A4-A437-3DD8-A754-2BADA3D0BDE3}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{602978EC-D581-3885-BFBB-B570F852B761}</Project>
       <Name>ext_edtaa3func</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\md5\ext_md5.vcxproj">
-      <Project>{0A34BD91-EFD4-3C22-827E-537BEB3D8E8F}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{38801C2F-987F-3ECF-AAC1-5F644EF87313}</Project>
       <Name>ext_md5</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
-      <Project>{1DE62FEF-640F-3454-934B-EF2528BE7748}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{A7FC8F8D-AC69-3900-B9FF-1B9E004F72A4}</Project>
       <Name>ext_poly2tri</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\recast\ext_recast.vcxproj">
-      <Project>{E1782E29-2C4D-3FDB-8632-E3EDD257CFC1}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{5017D57B-5AFC-3571-B620-29D745E6CFAB}</Project>
       <Name>ext_recast</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
-      <Project>{11CCFDC1-E762-3ED4-BD64-B73E8390581D}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{CAC60AD3-C84E-3AA1-AFA5-C7676D97F346}</Project>
       <Name>ext_tinyxml2</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
-      <Project>{4C7A8B41-0D53-3D14-8B93-CDA275005358}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{70C88BC9-36EB-3BF1-B727-47269295FC27}</Project>
       <Name>ext_unzip</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
-      <Project>{8F3112E0-2A47-323A-9A76-37BD5D07BA2E}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{19B47A6E-53CF-3A10-B10E-721AFDCB59E5}</Project>
       <Name>ext_xxhash</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
-      <Project>{15398CEB-D2C2-351C-99AC-A8B019E93885}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{8DBD86C3-9B83-3DA2-BE6F-4B3EAC6484CE}</Project>
       <Name>ext_xxtea</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\engine\external\external.vcxproj">
-      <Project>{4121565D-E6CD-35F5-9767-643C2CC1F7D9}</Project>
+    <ProjectReference Include="S:\Lemogus\proj.win32\engine\external\external.vcxproj">
+      <Project>{BDF9E8C6-F049-33DA-9B46-52819DA589D7}</Project>
       <Name>external</Name>
     </ProjectReference>
   </ItemGroup>

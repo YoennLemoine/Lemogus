@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ylemoine/repos/Lemogus/cocos2d/external/win32-specific/OpenalSoft
+# Install script for directory: S:/Lemogus/cocos2d/external/win32-specific/OpenalSoft
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

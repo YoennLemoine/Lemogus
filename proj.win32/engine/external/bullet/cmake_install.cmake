@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ylemoine/repos/Lemogus/cocos2d/external/bullet
+# Install script for directory: S:/Lemogus/cocos2d/external/bullet
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

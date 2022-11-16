@@ -1,6 +1,6 @@
-^C:\USERS\YLEMOINE\REPOS\LEMOGUS\COCOS2D\EXTERNAL\RECAST\CMAKELISTS.TXT
+^S:\LEMOGUS\COCOS2D\EXTERNAL\RECAST\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ylemoine/repos/Lemogus -BC:/Users/ylemoine/repos/Lemogus/proj.win32 --check-stamp-file C:/Users/ylemoine/repos/Lemogus/proj.win32/engine/external/recast/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/Lemogus -BS:/Lemogus/proj.win32 --check-stamp-file S:/Lemogus/proj.win32/engine/external/recast/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

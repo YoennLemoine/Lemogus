@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\5d320b06c84500c982923a6840657900\SYNC_RESOURCE-Lemogus.rule">
+    <CustomBuild Include="S:\Lemogus\proj.win32\CMakeFiles\6b5a4f411d42789afa0f353157deeda5\SYNC_RESOURCE-Lemogus.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\ylemoine\repos\Lemogus\CMakeLists.txt" />
+    <CustomBuild Include="S:\Lemogus\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\CMakeFiles\SYNC_RESOURCE-Lemogus" />
+    <None Include="S:\Lemogus\proj.win32\CMakeFiles\SYNC_RESOURCE-Lemogus" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{C2CD25D0-0C49-347F-BACF-BC909EB1AF13}</UniqueIdentifier>
+      <UniqueIdentifier>{73CBFE8E-1431-3CAC-901F-7CB86F76E544}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

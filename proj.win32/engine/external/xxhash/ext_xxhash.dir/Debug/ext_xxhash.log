@@ -1,3 +1,3 @@
-﻿  Building Custom Rule C:/Users/ylemoine/repos/Lemogus/cocos2d/external/xxhash/CMakeLists.txt
+﻿  Building Custom Rule S:/Lemogus/cocos2d/external/xxhash/CMakeLists.txt
   xxhash.c
-  ext_xxhash.vcxproj -> C:\Users\ylemoine\repos\Lemogus\proj.win32\lib\Debug\ext_xxhash.lib
+  ext_xxhash.vcxproj -> S:\Lemogus\proj.win32\lib\Debug\ext_xxhash.lib

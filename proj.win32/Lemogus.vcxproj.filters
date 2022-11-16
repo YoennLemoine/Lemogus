@@ -1,77 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\ylemoine\repos\Lemogus\Classes\AppDelegate.cpp">
+    <ClCompile Include="S:\Lemogus\Classes\AppDelegate.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ylemoine\repos\Lemogus\Classes\HelloWorldScene.cpp">
+    <ClCompile Include="S:\Lemogus\Classes\HelloWorldScene.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\main.cpp">
+    <ClCompile Include="S:\Lemogus\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ylemoine\repos\Lemogus\cocos2d\cocos\precheader.cpp">
+    <ClCompile Include="S:\Lemogus\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Classes\AppDelegate.h">
+    <ClInclude Include="S:\Lemogus\Classes\AppDelegate.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Classes\HelloWorldScene.h">
+    <ClInclude Include="S:\Lemogus\Classes\HelloWorldScene.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\main.h">
+    <ClInclude Include="S:\Lemogus\proj.win32\main.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\resource.h">
+    <ClInclude Include="S:\Lemogus\proj.win32\resource.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\CloseNormal.png">
+    <ClInclude Include="S:\Lemogus\Resources\CloseNormal.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\CloseSelected.png">
+    <ClInclude Include="S:\Lemogus\Resources\CloseSelected.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\HelloWorld.png">
+    <ClInclude Include="S:\Lemogus\Resources\HelloWorld.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\fonts\Marker Felt.ttf">
+    <ClInclude Include="S:\Lemogus\Resources\fonts\Marker Felt.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\fonts\arial.ttf">
+    <ClInclude Include="S:\Lemogus\Resources\fonts\arial.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ylemoine\repos\Lemogus\Resources\res\.gitkeep">
+    <ClInclude Include="S:\Lemogus\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ylemoine\repos\Lemogus\CMakeLists.txt" />
+    <CustomBuild Include="S:\Lemogus\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\Users\ylemoine\repos\Lemogus\proj.win32\game.rc">
+    <ResourceCompile Include="S:\Lemogus\proj.win32\game.rc">
       <Filter>Source Files\proj.win32</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Resources">
-      <UniqueIdentifier>{E4BA1DE1-DC44-3A43-8AC6-021FF6771086}</UniqueIdentifier>
+      <UniqueIdentifier>{EFF12F03-A764-3E23-8E92-07485504EF17}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\fonts">
-      <UniqueIdentifier>{1FCA9D69-3841-382E-9F32-78C2EB280F82}</UniqueIdentifier>
+      <UniqueIdentifier>{E107B1AA-FC89-3F47-8E59-CC48C382A656}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\res">
-      <UniqueIdentifier>{C1B8DCE3-60B3-3BF6-84E8-AB1567A2830D}</UniqueIdentifier>
+      <UniqueIdentifier>{0D29427B-7D94-3A5F-999C-37FDC5D59D02}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{5E9B2049-0BDC-3827-9BDF-73A46CD821DA}</UniqueIdentifier>
+      <UniqueIdentifier>{DB69899B-817B-3E08-80E4-4D257F8FE5D2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Classes">
-      <UniqueIdentifier>{A076A836-5F1C-3FA0-BBF0-A83D4F2BA0BA}</UniqueIdentifier>
+      <UniqueIdentifier>{CE0369C9-6048-35FC-B6EF-7EF74EA6E80B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\proj.win32">
-      <UniqueIdentifier>{F77D7B17-BC9A-31D4-9A31-7F76278852D6}</UniqueIdentifier>
+      <UniqueIdentifier>{8D3CC1A3-6A5D-3380-88E3-AA54122BE031}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

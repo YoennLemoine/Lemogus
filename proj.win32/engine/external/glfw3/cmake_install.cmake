@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ylemoine/repos/Lemogus/cocos2d/external/glfw3
+# Install script for directory: S:/Lemogus/cocos2d/external/glfw3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
