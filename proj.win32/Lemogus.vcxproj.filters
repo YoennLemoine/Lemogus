@@ -13,6 +13,9 @@
     <ClCompile Include="S:\Lemogus\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Amongsus.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="S:\Lemogus\Classes\AppDelegate.h">
@@ -44,6 +47,9 @@
     </ClInclude>
     <ClInclude Include="S:\Lemogus\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Amongsus.h">
+      <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
