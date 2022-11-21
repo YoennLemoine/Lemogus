@@ -5,8 +5,8 @@
 class Platforms : public cocos2d::Layer
 {
 public:
-	static cocos2d::Scene* createScenePlatform() ;
-	virtual bool initplat() ;
+	static cocos2d::Scene* createScenePlatform();
+	virtual bool initplat();
 	CREATE_FUNC(Platforms);
 
 	void Platforms::updateplatforms(float delta);

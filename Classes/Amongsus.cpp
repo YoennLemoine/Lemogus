@@ -4,11 +4,11 @@ USING_NS_CC;
 
 Scene* Amongsus::createScene()
 {
-    auto scene = Scene::create();
+    auto scenesus = Scene::create();
     auto layer = Amongsus::create();
-    scene->addChild(layer);
+    scenesus->addChild(layer);
 
-    return scene;
+    return scenesus;
 }
 
 bool Amongsus::init()

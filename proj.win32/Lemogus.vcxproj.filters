@@ -16,7 +16,7 @@
     <ClCompile Include="..\Classes\Amongsus.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="Platforms.cpp">
+    <ClCompile Include="..\Classes\Platforms.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -51,7 +51,7 @@
     <ClInclude Include="..\Classes\Amongsus.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="Platforms.h">
+    <ClInclude Include="..\Classes\Platforms.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
