@@ -1,4 +1,7 @@
 #include "Amongsus.h"
+#include <fstream>
+#include <string>
+using namespace std;
 
 USING_NS_CC;
 
@@ -25,8 +28,38 @@ bool Amongsus::init()
     }
     
     twerking = false;
-    speed = 250.0f;
+    Xspeed = 250.0f;
+    Yspeed = 100.0f;
+    YCollide = false;
+    XCollide = false;
 
+    fstream MapFile;
+    MapFile.open("map.txt", ios::in);
+    int line;
+    string tp;
+
+    while (getline(MapFile, tp)) {
+        for (int i = 0; i < tp.size(); i++)
+        {
+            if (tp[i] == 'W') {
+                WallSprite = Sprite::create("sussysprite.png");
+                WallSprite->setPosition(0.0f, 250.0f);
+                addChild(WallSprite, 0);
+            }
+            if (tp[i] == 'P') {
+                PlatformSprite = Sprite::create("sussysprite.png");
+                PlatformSprite->setPosition(400, 100);
+                addChild(PlatformSprite, 0);
+            }
+            if (tp[i] == 'S') {
+                sussyprite = Sprite::create("red.png");
+                sussyprite->setPosition(500.0f, getBoundingBox().getMidY());
+                sussyprite->setScale(0.3);
+                addChild(sussyprite, 0);
+            }
+        }
+        line++;
+    }
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
@@ -59,17 +92,6 @@ bool Amongsus::init()
     sussybackground->setScale(1.4);
     addChild(sussybackground, 0);
 
-
-    sussyprite = Sprite::create("red.png");
-    sussyprite->setPosition(getBoundingBox().getMidX(), getBoundingBox().getMidY());
-    sussyprite->setScale(0.3);
-    addChild(sussyprite, 0);
-
-    PlatformSprite = Sprite::create("uwu.jpg");
-    PlatformSprite = Sprite::create("sussysprite.png");
-    PlatformSprite->setPosition(400, 100);
-    addChild(PlatformSprite, 0);
-
     scheduleUpdate();
 
     return true;
@@ -88,21 +110,53 @@ void Amongsus::sussyVent(cocos2d::Ref* pSender)
 
 void Amongsus::update(float delta) {
     auto position = sussyprite->getPosition();
-    position.x -= speed * delta;
-    position.y -= speed * delta;
+    position.x -= Xspeed * delta;
+    position.y -= Yspeed * delta;
     if (position.x < 0 - (sussyprite->getBoundingBox().size.width / 2))
         position.x = this->getBoundingBox().getMaxX() + sussyprite->getBoundingBox().size.width / 2;
     sussyprite->setPosition(position);
 
     if (twerking == true)
     {
-        speed = 0.0f;
+        Xspeed = 0.0f;
     }
 
     Rect m_CharacterBounds = sussyprite->getBoundingBox();
     Rect m_PlatformBounds = PlatformSprite->getBoundingBox();
+    Rect m_WallBounds = WallSprite->getBoundingBox();
 
     if (m_CharacterBounds.intersectsRect(m_PlatformBounds)) {
-        speed = 0;
+        if (YCollide)
+        {
+            ;
+        }
+        else
+        {
+            YCollide = true;
+
+        }
+    }
+    else
+    {
+        if (YCollide)
+        {
+            YCollide = false;
+
+        }
+        else
+        {
+            ;
+        }
+    }
+
+    if (YCollide) {
+        Yspeed = 0.0f;
+    }
+    else
+    {
+        Yspeed = 50.0f;
+    }
+    if (m_CharacterBounds.intersectsRect(m_WallBounds)) {
+        Xspeed = -Xspeed;
     }
 }

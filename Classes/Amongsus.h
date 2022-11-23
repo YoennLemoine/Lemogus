@@ -16,9 +16,13 @@ public:
 private:
     bool twerking;
     bool vent;
-    float speed;
+    bool XCollide;
+    bool YCollide;
+    float Xspeed;
+    float Yspeed;
 
     cocos2d::Sprite* sussyprite;
     cocos2d::Sprite* sussybackground;
     cocos2d::Sprite* PlatformSprite;
+    cocos2d::Sprite* WallSprite;
 };
