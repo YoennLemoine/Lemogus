@@ -810,11 +810,16 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\Amongsus.h" />
+    <ClInclude Include="..\Classes\Entity.h" />
+    <ClInclude Include="..\Classes\framework.h" />
+    <ClInclude Include="..\Classes\Gate.h" />
     <ClInclude Include="S:\Lemogus\Classes\AppDelegate.h" />
     <ClInclude Include="S:\Lemogus\Classes\HelloWorldScene.h" />
     <ClInclude Include="S:\Lemogus\proj.win32\main.h" />
     <ClInclude Include="S:\Lemogus\proj.win32\resource.h" />
     <ClCompile Include="..\Classes\Amongsus.cpp" />
+    <ClCompile Include="..\Classes\Entity.cpp" />
+    <ClCompile Include="..\Classes\Gate.cpp" />
     <ClCompile Include="S:\Lemogus\Classes\AppDelegate.cpp" />
     <ClCompile Include="S:\Lemogus\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="S:\Lemogus\proj.win32\main.cpp" />

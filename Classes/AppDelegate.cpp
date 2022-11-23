@@ -22,10 +22,7 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-#include "AppDelegate.h"
-#include "HelloWorldScene.h"
-#include "Amongsus.h"
-#include "Platforms.h"
+#include "framework.h"
 
 // #define USE_AUDIO_ENGINE 1
 

@@ -22,7 +22,7 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-#include "HelloWorldScene.h"
+#include "framework.h"
 
 USING_NS_CC;
 
@@ -82,6 +82,7 @@ bool HelloWorld::init()
 
     /////////////////////////////
     // 3. add your codes below...
+    Gate* spawn = new Gate;
 
     // add a label shows "Hello World"
     // create and initialize a label
