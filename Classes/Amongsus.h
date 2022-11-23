@@ -13,4 +13,5 @@ public:
 
 private:
     cocos2d::Sprite* sussyprite;
+    cocos2d::Sprite* PlatformSprite;
 };

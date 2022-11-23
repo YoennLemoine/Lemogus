@@ -22,9 +22,18 @@ bool Amongsus::init()
     //auto spritecache = SpriteFrameCache::getInstance();
     //spritecache->addSpriteFramesWithFile("sussysprite.png");
     //sprite->getSpriteFrame();
+
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+
+
     sussyprite = Sprite::create("red.png");
     sussyprite->setPosition(getBoundingBox().getMidX(), getBoundingBox().getMidY());
     addChild(sussyprite, 0);
+
+    PlatformSprite = Sprite::create("sussysprite.png");
+    PlatformSprite->setPosition(400, 100);
+    addChild(PlatformSprite, 0);
 
     scheduleUpdate();
 

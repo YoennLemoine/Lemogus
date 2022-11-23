@@ -112,11 +112,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // create a scene. it's an autorelease object
     //auto scene = HelloWorld::createScene();
     auto scenesus = Amongsus::createScene();
-    auto scene = Platforms::createScenePlatform();
+    //auto scene = Platforms::createScenePlatform();
 
     // run
     director->runWithScene(scenesus);
-    director->runWithScene(scene);
+    //director->runWithScene(scene);
 
     return true;
 }
