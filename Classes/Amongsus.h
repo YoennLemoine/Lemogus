@@ -10,7 +10,15 @@ public:
     CREATE_FUNC(Amongsus);
 
     void update(float) override;
+    void sussyTwerk(cocos2d::Ref* pSender);
+    void sussyVent(cocos2d::Ref* pSender);
 
 private:
+    bool twerking;
+    bool vent;
+    float speed;
+
     cocos2d::Sprite* sussyprite;
+    cocos2d::Sprite* sussybackground;
+    cocos2d::Sprite* PlatformSprite;
 };
