@@ -18,9 +18,7 @@ bool Platforms::initplat()
         return false;
     }
 
-    PlatformSprite = Sprite::create("red.png");
-    PlatformSprite->setPosition(getBoundingBox().getMidX(), getBoundingBox().getMidY());
-    addChild(PlatformSprite, 0);
+    
 
     scheduleUpdate();
 

@@ -59,12 +59,14 @@ bool Amongsus::init()
     sussybackground->setScale(1.4);
     addChild(sussybackground, 0);
 
+
     sussyprite = Sprite::create("red.png");
     sussyprite->setPosition(getBoundingBox().getMidX(), getBoundingBox().getMidY());
     sussyprite->setScale(0.3);
     addChild(sussyprite, 0);
 
     PlatformSprite = Sprite::create("uwu.jpg");
+    PlatformSprite = Sprite::create("sussysprite.png");
     PlatformSprite->setPosition(400, 100);
     addChild(PlatformSprite, 0);
 

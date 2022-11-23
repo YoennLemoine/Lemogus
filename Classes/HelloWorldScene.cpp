@@ -52,6 +52,7 @@ bool HelloWorld::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     /////////////////////////////
+    // 
     // 2. add a menu item with "X" image, which is clicked to quit the program
     //    you may modify it.
 
@@ -74,7 +75,7 @@ bool HelloWorld::init()
         closeItem->setPosition(Vec2(x,y));
     }
 
-    // create menu, it's an autorelease object
+    // create menu, it's an autorelease object 
     auto menu = Menu::create(closeItem, NULL);
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
