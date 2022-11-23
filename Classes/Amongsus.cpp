@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 #include "Amongsus.h"
 #include <fstream>
 #include <string>
 using namespace std;
+=======
+#include "framework.h"
+>>>>>>> bdbfe73047a80d42f20c542337b63dc8ff6ea67e
 
 USING_NS_CC;
 
@@ -64,29 +68,21 @@ bool Amongsus::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     auto clickItem = MenuItemImage::create("uwu.jpg", "sussymongus.jpg", CC_CALLBACK_1(Amongsus::sussyTwerk, this));
-    auto clickItem1 = MenuItemImage::create("vent.jpg", "susvent.jpg", CC_CALLBACK_1(Amongsus::sussyTwerk, this));
+    auto clickItem1 = MenuItemImage::create("vent.jpg", "susvent.jpg", CC_CALLBACK_1(Amongsus::sussyVent, this));
 
-    if (clickItem == nullptr ||
-        clickItem->getContentSize().width <= 0 ||
-        clickItem->getContentSize().height <= 0)
-    {
-        problemLoading("'uwu.png' and 'sussymongus.jpg'");
-    }
-    else
-    {
-        float x = origin.x + visibleSize.width - clickItem->getContentSize().width / 2;
-        float y = origin.y + clickItem->getContentSize().height / 2;
-        clickItem->setPosition(Vec2(x, y));
-    }
+    clickItem->setPosition(Vec2(origin.x + visibleSize.width - clickItem->getContentSize().width / 2, origin.y + clickItem->getContentSize().height / 2));
+    clickItem1->setPosition(Vec2(origin.x + visibleSize.width - clickItem->getContentSize().width - 115, origin.y + clickItem->getContentSize().height / 2));
+
     // create menu, it's an autorelease object
     auto menu = Menu::create(clickItem, NULL);
-    menu->setPosition(Vec2::ZERO);
-    this->addChild(menu, 1);
+    auto vent = Menu::create(clickItem1, NULL);
 
-    //test spritesheet
-    //auto spritecache = SpriteFrameCache::getInstance();
-    //spritecache->addSpriteFramesWithFile("sussysprite.png");
-    //sprite->getSpriteFrame();
+    menu->setPosition(Vec2::ZERO);
+    vent->setPosition(Vec2::ZERO);
+
+    this->addChild(menu, 1);
+    this->addChild(vent, 1);
+
     sussybackground = Sprite::create("sussybackground.png");
     sussybackground->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
     sussybackground->setScale(1.4);
@@ -105,10 +101,11 @@ void Amongsus::sussyTwerk(cocos2d::Ref* pSender)
 
 void Amongsus::sussyVent(cocos2d::Ref* pSender)
 {
-
+    
 }
 
 void Amongsus::update(float delta) {
+
     auto position = sussyprite->getPosition();
     position.x -= Xspeed * delta;
     position.y -= Yspeed * delta;

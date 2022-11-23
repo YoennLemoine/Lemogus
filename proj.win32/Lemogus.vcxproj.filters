@@ -16,6 +16,12 @@
     <ClCompile Include="..\Classes\Amongsus.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Gate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Entity.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="S:\Lemogus\Classes\AppDelegate.h">
@@ -46,6 +52,15 @@
       <Filter>Resources\fonts</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Amongsus.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\framework.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Gate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Entity.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
