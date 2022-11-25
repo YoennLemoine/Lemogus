@@ -18,5 +18,6 @@ void Wall::initialisation(float x, float y)
 
     WallSprite = Sprite::create("sussysprite.png");
     WallSprite->retain();
+    WallSprite->setPosition(x ,y);
     addChild(WallSprite, 0);
 }
