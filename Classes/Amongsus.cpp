@@ -80,14 +80,10 @@ bool Amongsus::init()
             }
             if (tp[i] == 'S') {
                 m_pGate = Gate::create();
-<<<<<<< HEAD
                 //m_pGate->update();
                 m_pGate->m_pParent = this;
                 m_pGate->initialisation(i * 32.0f + 32.0f / 2.0f, 800 - (line * 18.0f));
-=======
-                m_pGate->initialisation(6, 7);
-                m_pGate->setScale(0.5f);
->>>>>>> b6fe14ca46d49024adf11c75007778cd7c13cf23
+                //m_pGate->setScale(0.5f);
                 addChild(m_pGate, 0);
             }
         }

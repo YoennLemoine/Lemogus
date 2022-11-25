@@ -15,7 +15,6 @@ void Gate::initialisation(float x, float y)
 {
 	m_type = PLAYER;
 
-<<<<<<< HEAD
 	setTexture("trapdoor.png");
 	retain();
 	setPosition(x, y);
@@ -24,12 +23,6 @@ void Gate::initialisation(float x, float y)
 	lastSpawn = timeGetTime();
 
 	scheduleUpdate();
-=======
-	Spawn = Sprite::create("trapdoor.png");
-	Spawn->retain();
-	Spawn->setPosition(x, y);
-	addChild(Spawn, 0);
->>>>>>> b6fe14ca46d49024adf11c75007778cd7c13cf23
 }
 
 void Gate::update(float dt) 
