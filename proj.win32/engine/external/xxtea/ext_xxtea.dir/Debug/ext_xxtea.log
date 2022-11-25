@@ -1,1 +1,3 @@
-﻿  ext_xxtea.vcxproj -> S:\Lemogus\proj.win32\lib\Debug\ext_xxtea.lib
+﻿  Building Custom Rule S:/Lemogus/cocos2d/external/xxtea/CMakeLists.txt
+  xxtea.cpp
+  ext_xxtea.vcxproj -> S:\Lemogus\proj.win32\lib\Debug\ext_xxtea.lib

@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-#include "Amongsus.h"
-#include <fstream>
-#include <string>
-using namespace std;
-=======
 #include "framework.h"
->>>>>>> bdbfe73047a80d42f20c542337b63dc8ff6ea67e
+using namespace std;
 
 USING_NS_CC;
 
@@ -30,40 +24,9 @@ bool Amongsus::init()
     {
         return false;
     }
-    
+
     twerking = false;
-    Xspeed = 250.0f;
-    Yspeed = 100.0f;
-    YCollide = false;
-    XCollide = false;
 
-    fstream MapFile;
-    MapFile.open("map.txt", ios::in);
-    int line;
-    string tp;
-
-    while (getline(MapFile, tp)) {
-        for (int i = 0; i < tp.size(); i++)
-        {
-            if (tp[i] == 'W') {
-                WallSprite = Sprite::create("sussysprite.png");
-                WallSprite->setPosition(0.0f, 250.0f);
-                addChild(WallSprite, 0);
-            }
-            if (tp[i] == 'P') {
-                PlatformSprite = Sprite::create("sussysprite.png");
-                PlatformSprite->setPosition(400, 100);
-                addChild(PlatformSprite, 0);
-            }
-            if (tp[i] == 'S') {
-                sussyprite = Sprite::create("red.png");
-                sussyprite->setPosition(500.0f, getBoundingBox().getMidY());
-                sussyprite->setScale(0.3);
-                addChild(sussyprite, 0);
-            }
-        }
-        line++;
-    }
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
@@ -88,6 +51,44 @@ bool Amongsus::init()
     sussybackground->setScale(1.4);
     addChild(sussybackground, 0);
 
+    //sussyprite = 
+
+    sussyprite = Sprite::create("red.png");
+    sussyprite->setPosition(500.0f, getBoundingBox().getMidY());
+    sussyprite->setScale(0.3);
+    addChild(sussyprite, 0);
+
+    fstream MapFile;
+    MapFile.open("../Resources/Map.txt", ios::in);
+    int line = 0;
+    string tp;
+
+    while (getline(MapFile, tp)) {
+        for (int i = 0; i < tp.size(); i++)
+        {
+            if (tp[i] == 'W') {
+                m_pWall = Wall::create();
+                m_pWall->initialisation(i, line);
+                Wallsus.push_back(m_pWall);
+                addChild(m_pWall, 0);
+            }
+            if (tp[i] == 'P') {
+                m_pPlatform = Platform::create();
+                m_pPlatform->initialisation(3, 5);
+                Platformsus.push_back(m_pPlatform);
+                addChild(m_pPlatform, 0);
+            }
+            if (tp[i] == 'S') {
+                m_pGate = Gate::create();
+                m_pGate->initialisation(6, 7);;
+                addChild(m_pGate, 0);
+            }
+        }
+        line++;
+    }
+    MapFile.close();
+
+
     scheduleUpdate();
 
     return true;
@@ -95,65 +96,30 @@ bool Amongsus::init()
 
 void Amongsus::sussyTwerk(cocos2d::Ref* pSender)
 {
-    sussyprite->setTexture("uwu.jpg");
+
+    //sussyprite->setTexture("uwu.jpg");
     twerking = true;
 }
 
 void Amongsus::sussyVent(cocos2d::Ref* pSender)
 {
-    
+
 }
 
 void Amongsus::update(float delta) {
 
-    auto position = sussyprite->getPosition();
-    position.x -= Xspeed * delta;
-    position.y -= Yspeed * delta;
-    if (position.x < 0 - (sussyprite->getBoundingBox().size.width / 2))
-        position.x = this->getBoundingBox().getMaxX() + sussyprite->getBoundingBox().size.width / 2;
-    sussyprite->setPosition(position);
-
     if (twerking == true)
     {
-        Xspeed = 0.0f;
+        //Xspeed = 0.0f;
     }
 
-    Rect m_CharacterBounds = sussyprite->getBoundingBox();
-    Rect m_PlatformBounds = PlatformSprite->getBoundingBox();
-    Rect m_WallBounds = WallSprite->getBoundingBox();
-
-    if (m_CharacterBounds.intersectsRect(m_PlatformBounds)) {
-        if (YCollide)
-        {
-            ;
-        }
-        else
-        {
-            YCollide = true;
-
-        }
-    }
-    else
+    // if mouse clicked
+    if (false)
     {
-        if (YCollide)
+        Character* pChar = m_pGate->HitTest(4, 5);
+        if (pChar)
         {
-            YCollide = false;
-
+            pChar->setTexture("");
         }
-        else
-        {
-            ;
-        }
-    }
-
-    if (YCollide) {
-        Yspeed = 0.0f;
-    }
-    else
-    {
-        Yspeed = 50.0f;
-    }
-    if (m_CharacterBounds.intersectsRect(m_WallBounds)) {
-        Xspeed = -Xspeed;
     }
 }

@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef __AMONGSUS_H__
+#define __AMONGSUS_H__
+
 #include "cocos2d.h"
 
 class Amongsus : public cocos2d::Layer
@@ -16,13 +19,16 @@ public:
 private:
     bool twerking;
     bool vent;
-    bool XCollide;
-    bool YCollide;
-    float Xspeed;
-    float Yspeed;
 
     cocos2d::Sprite* sussyprite;
     cocos2d::Sprite* sussybackground;
-    cocos2d::Sprite* PlatformSprite;
-    cocos2d::Sprite* WallSprite;
+
+    std::vector<Wall*> Wallsus;
+    std::vector<Platform*> Platformsus;
+
+    Wall* m_pWall;
+    Platform* m_pPlatform;
+    Gate* m_pGate;
 };
+
+#endif

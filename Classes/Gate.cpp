@@ -10,20 +10,39 @@ Gate::~Gate()
 
 }
 
-bool Gate::init()
+void Gate::initialisation(float x, float y)
 {
-	return true;
+	m_type = PLAYER;
+
+	Spawn = Sprite::create("trapdoor.png");
+	Spawn->retain();
+	addChild(Spawn, 0);
 }
 
-void Gate::update(std::vector<Amongsus> sussybaka)
+void Gate::update() 
 {
-	//float time = deltaTime;
+	float time = timeGetTime();
 
 	if (max_Entity >= 0)
 	{
-		Amongsus* sussyboi = new Amongsus;
+		Character* sussyboi = Character::create();
 		sussyboi->setPosition(600, 400);
+		addChild(sussyboi);
 		max_Entity--;
+		sussybaka.push_back(sussyboi);
 	}
 
+}
+
+Character* Gate::HitTest(int x, int y)
+{
+	for (int i = 0; i < sussybaka.size(); i++)
+	{
+		Character* c = sussybaka[i];
+		if (true)
+		{
+			return c;
+		}
+	}
+	return nullptr;
 }

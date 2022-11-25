@@ -1,16 +1,23 @@
 #pragma once
 
-class Gate : public Amongsus
+#include "cocos2d.h"
+
+class Gate : public Entity
 {
 public:
 
 	Gate();
 	virtual	~Gate();
-	virtual bool init() override;
-	void update(std::vector<Amongsus> sussybaka);
+	void initialisation(float x, float y);
+	void update();
 	CREATE_FUNC(Gate);
+
+	Character* HitTest(int x, int y);
 
 private:
 	int max_Entity;
+	float lastSpawn;
 
+	cocos2d::Sprite* Spawn;
+	std::vector<Character*> sussybaka;
 };
