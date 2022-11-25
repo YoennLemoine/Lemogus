@@ -68,7 +68,7 @@ bool Amongsus::init()
         {
             if (tp[i] == 'W') {
                 m_pWall = Wall::create();
-                m_pWall->initialisation(i, line);
+                m_pWall->initialisation(i * 111.0f, line * 80);
                 Wallsus.push_back(m_pWall);
                 addChild(m_pWall, 0);
             }
@@ -80,7 +80,8 @@ bool Amongsus::init()
             }
             if (tp[i] == 'S') {
                 m_pGate = Gate::create();
-                m_pGate->initialisation(6, 7);;
+                m_pGate->initialisation(6, 7);
+                m_pGate->setScale(0.5f);
                 addChild(m_pGate, 0);
             }
         }

@@ -16,6 +16,7 @@ void Gate::initialisation(float x, float y)
 
 	Spawn = Sprite::create("trapdoor.png");
 	Spawn->retain();
+	Spawn->setPosition(x, y);
 	addChild(Spawn, 0);
 }
 
