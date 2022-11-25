@@ -16,6 +16,9 @@ public:
     void sussyTwerk(cocos2d::Ref* pSender);
     void sussyVent(cocos2d::Ref* pSender);
 
+    std::vector<Wall*> Wallsus;
+    std::vector<Platform*> Platformsus;
+
 private:
     bool twerking;
     bool vent;
@@ -23,8 +26,6 @@ private:
     cocos2d::Sprite* sussyprite;
     cocos2d::Sprite* sussybackground;
 
-    std::vector<Wall*> Wallsus;
-    std::vector<Platform*> Platformsus;
 
     Wall* m_pWall;
     Platform* m_pPlatform;

@@ -53,10 +53,10 @@ bool Amongsus::init()
 
     //sussyprite = 
 
-    sussyprite = Sprite::create("red.png");
-    sussyprite->setPosition(500.0f, getBoundingBox().getMidY());
-    sussyprite->setScale(0.3);
-    addChild(sussyprite, 0);
+    //sussyprite = Sprite::create("red.png");
+    //sussyprite->setPosition(500.0f, getBoundingBox().getMidY());
+    //sussyprite->setScale(0.3);
+    //addChild(sussyprite, 0);
 
     fstream MapFile;
     MapFile.open("../Resources/Map.txt", ios::in);
@@ -80,15 +80,17 @@ bool Amongsus::init()
             }
             if (tp[i] == 'S') {
                 m_pGate = Gate::create();
-                m_pGate->initialisation(6, 7);
-                m_pGate->setScale(0.5f);
+                //m_pGate->update();
+                m_pGate->m_pParent = this;
+                m_pGate->initialisation(i * 32.0f + 32.0f / 2.0f, 800 - (line * 18.0f));
+                //m_pGate->setScale(0.5f);
                 addChild(m_pGate, 0);
             }
         }
         line++;
     }
     MapFile.close();
-
+    
 
     scheduleUpdate();
 

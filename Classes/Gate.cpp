@@ -3,6 +3,7 @@
 Gate::Gate()
 {
 	max_Entity = 12;
+	lastSpawn = 0.0f;
 }
 
 Gate::~Gate()
@@ -14,21 +15,29 @@ void Gate::initialisation(float x, float y)
 {
 	m_type = PLAYER;
 
-	Spawn = Sprite::create("trapdoor.png");
-	Spawn->retain();
-	Spawn->setPosition(x, y);
-	addChild(Spawn, 0);
+	setTexture("trapdoor.png");
+	retain();
+	setPosition(x, y);
+	setScale(0.1);
+	//addChild(this, 0);
+	lastSpawn = timeGetTime();
+
+	scheduleUpdate();
 }
 
-void Gate::update() 
+void Gate::update(float dt) 
 {
 	float time = timeGetTime();
 
-	if (max_Entity >= 0)
+	//if (max_Entity >= 0 && lastSpawn + 3000.f < timeGetTime())
+	if (max_Entity >= 0 && timeGetTime()-lastSpawn>1000 )
 	{
+		lastSpawn = timeGetTime();
+
 		Character* sussyboi = Character::create();
-		sussyboi->setPosition(600, 400);
-		addChild(sussyboi);
+		sussyboi->m_pParent = m_pParent;
+		sussyboi->setPosition(600, 500);
+		m_pParent->addChild(sussyboi, 0);
 		max_Entity--;
 		sussybaka.push_back(sussyboi);
 	}
