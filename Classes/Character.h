@@ -2,6 +2,7 @@
 
 #include "cocos2d.h"
 
+class Amongsus;
 class Character : public Entity
 {
 public:
@@ -12,11 +13,11 @@ public:
 	//void setTexture
 	CREATE_FUNC(Character);
 
+	Amongsus* m_pParent;
+
 private:
 	bool XCollide;
 	bool YCollide;
 	float Xspeed;
 	float Yspeed;
-
-	cocos2d::Sprite* sussyprite;
 };

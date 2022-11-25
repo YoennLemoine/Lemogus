@@ -2,6 +2,8 @@
 
 #include "cocos2d.h"
 
+class Amongsus;
+
 class Gate : public Entity
 {
 public:
@@ -9,15 +11,17 @@ public:
 	Gate();
 	virtual	~Gate();
 	void initialisation(float x, float y);
-	void update();
+	void update(float dt);
 	CREATE_FUNC(Gate);
 
 	Character* HitTest(int x, int y);
 
+	std::vector<Character*> sussybaka;
+
+	Amongsus* m_pParent;
 private:
 	int max_Entity;
-	float lastSpawn;
+	DWORD lastSpawn;
 
-	cocos2d::Sprite* Spawn;
-	std::vector<Character*> sussybaka;
+	//cocos2d::Sprite* Spawn;
 };
