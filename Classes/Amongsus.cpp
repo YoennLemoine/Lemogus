@@ -68,7 +68,7 @@ bool Amongsus::init()
         {
             if (tp[i] == 'W') {
                 m_pWall = Wall::create();
-                m_pWall->initialisation(i * 111.0f, line * 80);
+                m_pWall->initialisation(i * 130.0f, line * 222.0f);
                 Wallsus.push_back(m_pWall);
                 addChild(m_pWall, 0);
             }
